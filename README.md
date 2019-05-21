@@ -77,8 +77,8 @@ Agregarle también un método `estaAgradecida()` que nos indica si su nivel de a
 Cuando está agradecida, cada planta reacciona de distinta manera:
 * el _maíz_ crece más alto, y su valor en el mercado es de 180 por planta;
 * el _trigo_ crece más rápido, por lo tanto su nivel aumenta en 2 cada vez que se lo riega;
-* el _tomaco_ se pudre porque es un injerto artificial y por lo tanto su valor pasa a ser 0.
+* el _tomaco_ se pudre porque es un injerto artificial y por lo tanto ya no estará listo para la cosecha.
 
-Cuando no está agradecida, se mantiene el comportamiento de la etapa 1.
+Cuando no está agradecida, las plantas mantienen el comportamiento de la etapa 1.
 
 Hacer las modificaciones que hagan falta en las plantas para que se comporten de esa manera. Tener en cuenta que habrá un solo objeto que represente a la `pachamama`, y que el código de las plantas deberá modificarse automáticamente según su estado de agradecimiento.
