@@ -1,9 +1,11 @@
+import pachamama.*
+
 class Maiz {
 	var esBebe = true
 	
 	method regar() { esBebe = false }
 	method estaLista() { return not esBebe }
-	method valor() { return 150 }
+	method valor() { return if (pachamama.estaAgradecida()) { 180 } else { 150 } }
 	method tieneGluten() = false
 }
 
@@ -12,7 +14,7 @@ class Trigo {
 	const etapaMaxima = 3
 	
 	method regar() {
-		etapa++
+		if (pachamama.estaAgradecida()) { etapa += 2 } else { etapa++ }
 		if (etapa > etapaMaxima) { etapa = 0 } 
 	}
 	
@@ -23,7 +25,7 @@ class Trigo {
 
 class Tomaco {
 	method regar() {}
-	method estaLista() { return true }
+	method estaLista() { return not pachamama.estaAgradecida() }
 	method valor() { return 80 }
 	method tieneGluten() = false
 }
