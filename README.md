@@ -59,4 +59,26 @@ Una vez que vende lo que tiene para vender, obviamente, deja de tenerlo.
 A partir de lo implementado en la etapa anterior, queremos agregar las siguientes consultas a Toni:
 
 * `paraCuantosDiasLeAlcanza():` asumiendo que tiene un gasto de 200 monedas por día, indica para cuántos días le alcanza el dinero. Considerar para esta cuenta el dinero acumulado **más** lo que podría sacar si vende su cosecha actual;
-* `cuantoHayParaCeliacos():` indica cuántas plantas de las sembradas podrían ser consumidas por personas con celiaquía, las cuales solo pueden comer alimentos sin gluten (el trigo tiene gluten, el tomaco y el maíz no). Considerar solamente las plantas que estén listas para cosechar; 
+* `cuantoHayParaCeliacos():` indica cuántas plantas de las sembradas podrían ser consumidas por personas con celiaquía, las cuales solo pueden comer alimentos sin gluten (el trigo tiene gluten, el tomaco y el maíz no). Considerar solamente las plantas que estén listas para cosechar;
+
+## Etapa 3 - la Pachamama
+
+Agregar al modelo un objeto que represente a la Pachamama, el cual (obviamente) provocará distintos cambios sobre nuestros cultivos.
+
+En una sobresimplificación, vamos a decir que la Pacha tiene un nivel de agradecimiento, que arranca en 10 y que se puede modificar según las siguientes conductas del ser humano y la naturaleza:
+
+* `llover()`: aumenta en 5 el nivel de agradecimiento;
+* `tirarBasura()`: disminuye en 10 el nivel de agradecimiento;
+* `fumigar()`: lleva el nivel de agradecimiento a 0, sin importar en cuánto estaba;
+* `abonar()`: duplica el nivel de agradecimiento - si estaba en 5 queda en 10, si estaba en 2 queda en 4, etc.
+
+Agregarle también un método `estaAgradecida()` que nos indica si su nivel de agradecimiento es de 10 o más.
+
+Cuando está agradecida, cada planta reacciona de distinta manera:
+* el _maíz_ crece más alto, y su valor en el mercado es de 180 por planta;
+* el _trigo_ crece más rápido, por lo tanto su nivel aumenta en 2 cada vez que se lo riega;
+* el _tomaco_ se pudre porque es un injerto artificial y por lo tanto su valor pasa a ser 0.
+
+Cuando no está agradecida, se mantiene el comportamiento de la etapa 1.
+
+Hacer las modificaciones que hagan falta en las plantas para que se comporten de esa manera. Tener en cuenta que habrá un solo objeto que represente a la `pachamama`, y que el código de las plantas deberá modificarse automáticamente según su estado de agradecimiento.
