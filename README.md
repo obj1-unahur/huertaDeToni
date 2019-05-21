@@ -47,7 +47,7 @@ Implementar un método `venderCosecha()` que vende todas las plantas que ya fuer
 - **Trigo**: 100 monedas si está en etapa 2, 200 si está en etapa 3.
 - **Tomaco**: 80 monedas por planta.
 
-Toni debe acumular el oro y recordar cuánto oro obtuvo en total.
+Toni debe acumular el oro y recordar cuánto oro obtuvo en total. De nuevo, la recomendación es hacer primero un método que venda **una** planta y luego hacer el que vende todas.
 
 **Atenti**  
 Una vez que vende lo que tiene para vender, obviamente, deja de tenerlo.
