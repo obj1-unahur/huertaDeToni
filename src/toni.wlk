@@ -4,6 +4,7 @@ object toni {
 	const property plantasSembradas = []
 	const property plantasCosechadas = []
 	var property dinero = 0
+	const gastoDiario = 200
 	
 	method sembrar(planta) {
 		plantasSembradas.add(planta)
@@ -33,5 +34,18 @@ object toni {
 	method vender(planta) {
 		dinero += planta.valor()
 		plantasCosechadas.remove(planta)
+	}
+	
+	method paraCuantosDiasLeAlcanza() {
+		return self.dineroTotal() / gastoDiario
+	}
+	
+	method dineroTotal() {
+		return dinero + self.plantasListasParaCosechar().sum { p => p.valor() }
+	}
+	
+	method cuantoHayParaCeliacos() {
+		return self.plantasListasParaCosechar()
+			.count { p => not p.tieneGluten() }
 	}
 }
