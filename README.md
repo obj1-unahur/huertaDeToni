@@ -54,8 +54,9 @@ Toni debe acumular el oro y recordar cuánto oro obtuvo en total. De nuevo, la r
 **Atenti**  
 Una vez que vende lo que tiene para vender, obviamente, deja de tenerlo.
 
-## Etapa 2 - consultas al modelo
+## Etapa 2 - consultas
 
 A partir de lo implementado en la etapa anterior, queremos agregar las siguientes consultas a Toni:
 
-* `paraCuantosDiasLeAlcanza():` asumiendo que tiene un gasto de 200 monedas por día, indica para cuántos días le alcanza el dinero. Considerar el dinero acumulado y lo que podría sacar si vende su cosecha actual;
+* `paraCuantosDiasLeAlcanza():` asumiendo que tiene un gasto de 200 monedas por día, indica para cuántos días le alcanza el dinero. Considerar para esta cuenta el dinero acumulado **más** lo que podría sacar si vende su cosecha actual;
+* `cuantoHayParaCeliacos():` indica cuántas plantas de las sembradas podrían ser consumidas por personas con celiaquía, las cuales solo pueden comer alimentos sin gluten (el trigo tiene gluten, el tomaco y el maíz no). Considerar solamente las plantas que estén listas para cosechar; 
