@@ -22,5 +22,5 @@ class Trigo {
 class Tomaco {
 	method regar() {}
 	method estaLista() { return true }
-	method tomaco() { return 80 }
+	method valor() { return 80 }
 }
