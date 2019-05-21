@@ -1,5 +1,7 @@
 # La huerta de Toni
 
+## Etapa 1 - Modelo básico
+
 ### Intro
 Toni es un [amigo youtuber](https://www.youtube.com/channel/UC8nVWi8L7fPCjOMpSSNAM0Q) que se gana la vida cultivando plantas de distintas especies.
 Para ello tiene que sembrar, regar y cosechar sus cultivos. Después de la cosecha, Toni vende lo que cultivó, obteniendo ganancias en la forma de monedas de oro.
@@ -51,3 +53,9 @@ Toni debe acumular el oro y recordar cuánto oro obtuvo en total. De nuevo, la r
 
 **Atenti**  
 Una vez que vende lo que tiene para vender, obviamente, deja de tenerlo.
+
+## Etapa 2 - consultas al modelo
+
+A partir de lo implementado en la etapa anterior, queremos agregar las siguientes consultas a Toni:
+
+* `paraCuantosDiasLeAlcanza():` asumiendo que tiene un gasto de 200 monedas por día, indica para cuántos días le alcanza el dinero. Considerar el dinero acumulado y lo que podría sacar si vende su cosecha actual;
