@@ -60,6 +60,7 @@ A partir de lo implementado en la etapa anterior, queremos agregar las siguiente
 
 * `paraCuantosDiasLeAlcanza():` asumiendo que tiene un gasto de 200 monedas por día, indica para cuántos días le alcanza el dinero. Considerar para esta cuenta el dinero acumulado **más** lo que podría sacar si vende su cosecha actual;
 * `cuantoHayParaCeliacos():` indica cuántas plantas de las sembradas podrían ser consumidas por personas con celiaquía, las cuales solo pueden comer alimentos sin gluten (el trigo tiene gluten, el tomaco y el maíz no). Considerar solamente las plantas que estén listas para cosechar;
+* `convieneRegar():` indica si alguna de las plantas sembradas aún no está lista para la cosecha - porque en ese caso convendría regar para acelerar el proceso.
 
 ## Etapa 3 - la Pachamama
 
